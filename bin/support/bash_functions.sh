@@ -33,6 +33,7 @@ heroku_buildpack_ruby_install_ruby()
 {
   local bin_dir=$1
   local buildpack_dir=$2
+  STACK='stack-18'
   echo 'heroku_buildpack_ruby_install_ruby'
   echo $STACK
   echo $buildpack_dir
