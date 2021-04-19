@@ -11,6 +11,7 @@ set -eu
 
 BIN_DIR=$1
 RUBY_BOOTSTRAP_DIR=$2
+STACK='heroku-18'
 
 curl_retry_on_18() {
   local ec=18;
