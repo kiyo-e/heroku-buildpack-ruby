@@ -14,6 +14,7 @@ RUBY_BOOTSTRAP_DIR=$2
 
 echo $BIN_DIR
 echo $RUBY_BOOTSTRAP_DIR
+cat "$BIN_DIR/../buildpack.toml"
 
 curl_retry_on_18() {
   local ec=18;
