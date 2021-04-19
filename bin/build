@@ -8,6 +8,14 @@ APP_DIR=$(pwd)
 BIN_DIR=$(cd $(dirname $0); pwd)
 BUILDPACK_DIR=$(dirname $BIN_DIR)
 
+echo $LAYERS_DIR
+echo $PLATFORM_DIR
+echo $ENV_DIR
+echo $PLAN
+echo $APP_DIR
+echo $BIN_DIR
+echo $BUILDPACK_DIR
+
 # legacy buildpack uses $STACK 
 export STACK=$CNB_STACK_ID
 
