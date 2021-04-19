@@ -11,7 +11,7 @@ $:.unshift File.expand_path("../../../lib", __FILE__)
 require "language_pack"
 require "language_pack/shell_helpers"
 
-p ARGV
+p ARGV[2]
 
 begin
   LanguagePack::Instrument.trace 'compile', 'app.compile' do
