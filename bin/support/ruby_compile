@@ -19,6 +19,8 @@ begin
     if pack = LanguagePack.detect(ARGV[0], ARGV[1])
       pack.topic("Compiling #{pack.name}")
       pack.log("compile") do
+        p pack
+        p ENV
         pack.compile
       end
     end
