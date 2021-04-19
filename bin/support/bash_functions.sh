@@ -33,7 +33,9 @@ heroku_buildpack_ruby_install_ruby()
 {
   local bin_dir=$1
   local buildpack_dir=$2
+  echo 'heroku_buildpack_ruby_install_ruby'
   echo $STACK
+  echo $buildpack_dir
   heroku_buildpack_ruby_dir="$buildpack_dir/vendor/ruby/$STACK"
 
   # The -d flag checks to see if a file exists and is a directory.
